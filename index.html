@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./src/styles/styles.css" type="text/css" />
+    <title>Movies</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Movies Gallery</h1>
+      <header>
+        <div class="genres">
+          <select id="genre">
+            <option disabled selected>select genre</option>
+            <option value="">All genres</option>
+            <option value="Adventure">Adventure</option>
+            <option value="Action">Action</option>
+            <option value="Biography">Biography</option>
+            <option value="Crime">Crime</option>
+            <option value="Drama">Drama</option>
+            <option value="Sci-Fi">Sci-Fi</option>
+            <option value="Sport">Sport</option>
+            <option value="Thriller">Thriller</option>
+            <option value="USA">USA</option>
+          </select>
+          <div class="genres__view">
+            <input type="radio" name="view" id="grid" class="radio" checked="checked" value="grid" />
+            <label for="grid" class="genres__view-radio genres__view-grid">
+              <i class="fas fa-th"></i>
+              <span class="radio-checked"></span>
+            </label>
+            <input type="radio" name="view" id="list" class="radio" value="list" />
+            <label for="list" class="genres__view-radio genres__view-list">
+              <i class="fa fa-list-ul"></i>
+              <span class="radio-checked"></span>
+            </label>
+          </div>
+        </div>
+      </header>
+      <div class="flex-container">
+        <div class="movies" id="movies"></div>
+        <div class="favorite">
+          <img src="./src/img/star_full.png" alt="star" />
+          <h2 class="favorite__title">Favorite List</h2>
+          <div class="favorite-list"></div>
+        </div>
+      </div>
+      <div class="modal-overlay">
+        <div class="modal"></div>
+      </div>
+    </div>
+  </body>
+  <script defer src="https://use.fontawesome.com/releases/v5.15.1/js/all.js"></script>
+  <script src="./src/scripts/index.js" type="module"></script>
+</html>

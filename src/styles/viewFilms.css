@@ -1,0 +1,138 @@
+.movies {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 700px;
+}
+
+.movie {
+  align-items: center;
+  margin-top: 15px;
+  cursor: pointer;
+  position: relative;
+  transition: transform 0.2s linear;
+  border: 2px solid darkgray;
+}
+.movie__image-block {
+  width: 120px;
+  height: 177px;
+  overflow: hidden;
+  margin: 12px auto 0;
+  display: flex;
+}
+.movie__image {
+  width: 100%;
+  border: 2px solid darkgray;
+}
+
+.movie__year {
+  margin-top: 10px;
+}
+
+.movie__description {
+  margin-top: 10px;
+}
+.grid-view .movie__description {
+  text-align: center;
+}
+.list-view .movie__description {
+  text-align: start;
+}
+
+.movie__description > span {
+  display: inline-block;
+  margin: 0 10px 0 0;
+}
+
+.star {
+  cursor: pointer;
+  z-index: 999;
+}
+.star-img {
+  background-image: url("../img/star.png");
+}
+
+.star-img-active {
+  background-image: url("../img/star_full.png");
+}
+.grid-view {
+  flex-basis: 150px;
+  background: lightgray;
+  border-radius: 10px;
+}
+.grid-view:hover {
+  border: 3px solid grey;
+  /* display: block;
+  transform: scale(1.1);*/
+}
+
+.grid-view > .star {
+  width: 30px;
+  height: 30px;
+}
+.grid-view > .star-grid {
+  position: absolute;
+  right: 0px;
+  top: -2px;
+}
+.list-view {
+  display: flex;
+  align-items: end;
+  padding: 26px 20px;
+  background-color: #ababab;
+  border-radius: 10px;
+  border: 2px solid grey;
+}
+.list-view__block {
+  padding: 0 20px;
+}
+.list-view__block > p {
+  line-height: normal;
+  width: 450px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.list-view > .star,
+.star-img-active {
+  width: 30px;
+  height: 30px;
+}
+.list-view > img {
+  border: 2px solid grey;
+}
+
+.list-view > .movie__description {
+  margin-top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.list-view > .movie__year {
+  margin: 0;
+}
+.list-view > .star-list {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+.list-view__genres {
+  margin: 0;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+}
+.list-view__genre {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-basis: 130px;
+  height: 37px;
+  padding: 8px 20px;
+  background-color: #d5d4d4;
+  border-radius: 5px;
+  margin: 10px 5px 0 5px;
+  border: 2px solid grey;
+}

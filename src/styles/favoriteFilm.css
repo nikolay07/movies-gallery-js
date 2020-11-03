@@ -1,0 +1,60 @@
+.favorite {
+  margin-top: 10px;
+  width: 260px;
+  height: 300px;
+  border: 1px solid grey;
+  position: relative;
+  background-color: lightgray;
+}
+
+.favorite > img {
+  display: inline-block;
+  position: absolute;
+  top: 20px;
+  left: 10px;
+}
+.favorite__title {
+  text-align: center;
+  display: inline-block;
+}
+.favorite-list {
+  height: 70%;
+  padding: 0 16px;
+  overflow-y: scroll;
+  list-style-type: none;
+}
+.favorite-list::-webkit-scrollbar {
+  width: 0;
+}
+
+.favorite-list > li::before {
+  content: "";
+  line-height: normal;
+  display: block;
+  background: url(../img/right-arrow.svg) no-repeat;
+  width: 20px;
+  height: 20px;
+  float: left;
+  margin: 0 10px 0 0;
+}
+.fav__item > img {
+  width: 20px;
+  height: 20px;
+}
+.fav {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.fav__title {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 0;
+  font-weight: 700;
+}
+.fav__delete {
+  font-weight: 700;
+  cursor: pointer;
+}
