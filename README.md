@@ -1,6 +1,6 @@
 # Movies Gallery app
 
-### Go **["moviea gallery"](https://movie-galery.netlify.app/)** for live demo.
+### Go **["movies gallery"](https://movie-galery.netlify.app/)** for live demo.
 
 - To launch the application, run open the index.js in live-server mode.
 
